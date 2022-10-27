@@ -8,7 +8,6 @@ validate = function () {
     window.location = "home.html";
   }
 };
-
 logout = function () {
   window.location = "login.html";
 };
