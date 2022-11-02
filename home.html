@@ -18,7 +18,11 @@
       }
       button {
         position: relative;
-        left: 95%;
+        left: 85%;
+        font-size: 2rem;
+        font-weight: 600;
+
+        cursor: pointer;
       }
     </style>
   </head>
@@ -48,6 +52,15 @@
         headquarters are in Mountain View, California.
       </p>
     </div>
-    <script src="Script.js"></script>
+    <script>
+      if (localStorage.length == 0) {
+        window.location = "login.html";
+      }
+
+      logout = function () {
+        window.location = "login.html";
+        localStorage.clear();
+      };
+    </script>
   </body>
 </html>
